@@ -1,0 +1,71 @@
+table{
+    margin:5%;
+    width: 90%;
+    border-collapse: separate;
+    border-spacing: 10px;
+}
+nav {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    z-index: 1000; 
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    display:inline-table;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+body {
+    background-color: #afafaf; 
+    margin: 0; 
+    padding: 0;
+}
+p{
+    text-align: justify;
+}
+#parrafoSomos{
+    text-align: justify;
+    font-size: large;
+}
+th,td{
+    padding: 5px;
+    border-style: none;
+}
+#Encabezado{
+    border-collapse: separate;
+    border-spacing: 30px;
+    border-style: none;
+    background-color: #969696;
+}
+#contenidoPa{
+    border-collapse: separate;
+    border-spacing: 0px;
+    border-style: none;
+    background-color: #969696;
+    padding: 5px;
+}
+#contenidoPaquete{
+    background-color: #dbdbdb;
+}
