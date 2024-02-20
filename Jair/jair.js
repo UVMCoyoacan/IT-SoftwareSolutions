@@ -20,7 +20,7 @@ function mostrarFormulario()
     form.appendChild(nombreDiv);
     form.appendChild(emailDiv);
     form.appendChild(mensajeDiv);
-    form.appendChild(enviarBtn);
+    form.appendChild(btn_enviar);
 
     formularioContainer.appendChild(form);
 
