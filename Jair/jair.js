@@ -22,6 +22,6 @@ function mostrarFormulario()
     form.appendChild(mensajeDiv);
     form.appendChild(btn_enviar);
 
-    formularioContainer.appendChild(form);
+    contenedor.appendChild(form);
 
 }
