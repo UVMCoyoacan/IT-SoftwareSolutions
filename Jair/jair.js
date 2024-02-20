@@ -1,6 +1,6 @@
 function mostrarFormulario()
 {
-    console.log("Hola mundo");
+    //console.log("Hola mundo");
     
     var contenedor=document.getElementById("formulario");
     var form = document.createElement('form');
@@ -14,8 +14,7 @@ function mostrarFormulario()
     mensajeDiv.innerHTML = '<label for="mensaje">Mensaje: </label><textarea id="mensaje" name="mensaje" rows="4" required></textarea>';
 
     var btn_enviar = document.createElement('button');
-    btn_enviar.type = 'submit';
-    btn_enviar.textContent = 'Enviar';
+    btn_enviar.innerHTML='<id="btn_enviar" onclick="enviar()">Enviar';
 
     form.appendChild(nombreDiv);
     form.appendChild(emailDiv);
@@ -24,4 +23,8 @@ function mostrarFormulario()
 
     contenedor.appendChild(form);
 
+}
+function enviar(nombre,correo,mensaje)
+{
+    console.log(nombre+", "+correo+", "+mensaje);
 }
