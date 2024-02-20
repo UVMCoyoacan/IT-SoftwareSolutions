@@ -1,0 +1,17 @@
+h1,h2,h3{
+    text-align: center;
+    color:darkcyan
+}
+body{
+    background-color:darkslategrey;
+}
+div{
+    padding: 2%;
+}
+p{
+    text-align: justify;
+    color:aliceblue
+}
+ul{
+    color: aliceblue;
+}
