@@ -18,7 +18,7 @@ function mostrarFormulario()
 
     var btn_enviar = document.createElement('button');
     btn_enviar.id='btn_enviar';
-    btn_enviar.onclick='';
+    btn_enviar.onclick='enviar()';
 
 
     form.appendChild(nombreDiv);
@@ -29,7 +29,18 @@ function mostrarFormulario()
     contenedor.appendChild(form);
 
 }
-function enviar(nombre,correo,mensaje)
+function enviar()
 {
-    console.log(nombre+", "+correo+", "+mensaje);
+    var nombre=getUrlVars()["nombre"];
+    var email=getUrlVars()["email"];
+    var mensaje=getUrlVars()["mensaje"];
+    alert(nombre+", "+correo+", "+mensaje);
 }
+function getUrlVars() {
+    var vars = {};
+    var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, 
+    function(m,key,value) {
+      vars[key] = value;
+    });
+    return vars;
+  }
