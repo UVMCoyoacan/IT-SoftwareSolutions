@@ -6,8 +6,7 @@ function mostrarFormulario()
     var form = document.createElement('form');
     form.id = 'formulario-datos';
     form.name='contacto';
-    form.method='get';
-    form.action=''     
+    form.method='get';     
     var nombreDiv = document.createElement('div');
     nombreDiv.innerHTML = '<label for="nombre">Nombre: </label><input type="text" id="nombre" name="nombre" required>';
     var emailDiv = document.createElement('div');
@@ -33,7 +32,7 @@ function mostrarFormulario()
 function enviar()
 {
     var nombre=getUrlVars()["nombre"];
-    var email=getUrlVars()["email"];
+    var correo=getUrlVars()["email"];
     var mensaje=getUrlVars()["mensaje"];
     console.log(nombre+", "+correo+", "+mensaje);
     alert(nombre+", "+correo+", "+mensaje);
