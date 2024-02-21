@@ -19,4 +19,10 @@ button
 {
     background-color: teal;
     color: aliceblue;
+    border-radius: 10px;
+    border:none;
+    text-align: center;
+    padding: 10px;
+    font-size: 16px;
+    cursor:pointer;
 }
