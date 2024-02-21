@@ -5,7 +5,7 @@ function enviar()
     var mensaje=getUrlVars()["mensaje"];
     alert(nombre+", "+correo+", "+mensaje);
     var conte=document.getElementById("datos");
-    conte.innerHTML="Nombre: "+nombre+", Corre: "+correo+", Mensaje: "+mensaje;
+    conte.innerHTML="Nombre: "+nombre+", Correo: "+correo+", Mensaje: "+mensaje;
 }
 function getUrlVars() {
     var vars = {};
