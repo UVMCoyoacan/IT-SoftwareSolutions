@@ -18,7 +18,7 @@ function mostrarFormulario()
 
     var btn_enviar = document.createElement('button');
     btn_enviar.id='btn_enviar';
-    btn_enviar.onclick='enviar()';
+    btn_enviar.onclick="enviar()";
     btn_enviar.innerHTML='Enviar';
 
 
