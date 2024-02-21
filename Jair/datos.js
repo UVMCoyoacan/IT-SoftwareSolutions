@@ -5,7 +5,7 @@ function enviar()
     var mensaje=getUrlVars()["mensaje"];
     //alert(nombre+", "+correo+", "+mensaje);
     var conte=document.getElementById("contenedor");
-    var hnombre=document.createElement("h1");
+    var hnombre=document.createElement("h2");
     var pcorreo=document.createElement("p");
     var pmensaje=document.createElement("p");
     hnombre.innerHTML=nombre;
