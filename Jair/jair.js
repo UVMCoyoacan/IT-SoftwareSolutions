@@ -6,7 +6,8 @@ function mostrarFormulario()
     var form = document.createElement('form');
     form.id = 'formulario-datos';
     form.name='contacto';
-    form.method='get';     
+    form.method='get'; 
+    form.action='recibirDatos.html';    
     var nombreDiv = document.createElement('div');
     nombreDiv.innerHTML = '<label for="nombre">Nombre: </label><input type="text" id="nombre" name="nombre" required>';
     var emailDiv = document.createElement('div');
@@ -16,9 +17,8 @@ function mostrarFormulario()
     mensajeDiv.innerHTML = '<label for="mensaje">Mensaje: </label><textarea id="mensaje" name="mensaje" rows="4" required></textarea>';
 
     var btn_enviar = document.createElement('button');
-    btn_enviar.id='btn_enviar';
-    btn_enviar.onclick="enviar()";
-    btn_enviar.innerHTML='Enviar';
+   btn_enviar.type='submit';
+   btn_enviar.textContent='Enviar';
 
 
     form.appendChild(nombreDiv);
@@ -29,19 +29,3 @@ function mostrarFormulario()
     contenedor.appendChild(form);
 
 }
-function enviar()
-{
-    var nombre=getUrlVars()["nombre"];
-    var correo=getUrlVars()["email"];
-    var mensaje=getUrlVars()["mensaje"];
-    console.log(nombre+", "+correo+", "+mensaje);
-    alert(nombre+", "+correo+", "+mensaje);
-}
-function getUrlVars() {
-    var vars = {};
-    var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, 
-    function(m,key,value) {
-      vars[key] = value;
-    });
-    return vars;
-  }
