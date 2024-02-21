@@ -35,6 +35,7 @@ function enviar()
     var nombre=getUrlVars()["nombre"];
     var email=getUrlVars()["email"];
     var mensaje=getUrlVars()["mensaje"];
+    console.log(nombre+", "+correo+", "+mensaje);
     alert(nombre+", "+correo+", "+mensaje);
 }
 function getUrlVars() {
