@@ -3,11 +3,11 @@ function enviar()
     var nombre=getUrlVars()["nombre"];
     var correo=getUrlVars()["email"];
     var mensaje=getUrlVars()["mensaje"];
-    alert(nombre+", "+correo+", "+mensaje);
+    //alert(nombre+", "+correo+", "+mensaje);
     var conte=document.getElementById("contenedor");
     var hnombre=document.createElement("h1");
     var pcorreo=document.createElement("p");
-    var pmensaje=document.createAttribute("p");
+    var pmensaje=document.createElement("p");
     hnombre.innerHTML=nombre;
     pcorreo.innerHTML=correo;
     pmensaje.innerHTML=mensaje;
