@@ -10,7 +10,8 @@ div{
 }
 p{
     text-align: justify;
-    color:aliceblue
+    color:aliceblue;
+    font-size: 14px;
 }
 ul{
     color: aliceblue;
