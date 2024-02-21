@@ -4,8 +4,14 @@ function enviar()
     var correo=getUrlVars()["email"];
     var mensaje=getUrlVars()["mensaje"];
     alert(nombre+", "+correo+", "+mensaje);
-    var conte=document.getElementById("datos");
-    conte.innerHTML="Nombre: "+nombre+", Correo: "+correo+", Mensaje: "+mensaje;
+    var conte=document.getElementById("contenedor");
+    var hnombre=document.createElement("h1");
+    var pcorreo=document.createElement("p");
+    var pmensaje=document.createAttribute("p");
+
+    conte.appendChild(hnombre);
+    conte.appendChild(pcorreo);
+    conte.appendChild(pmensaje);
 }
 function getUrlVars() {
     var vars = {};
