@@ -9,12 +9,12 @@ function mostrarFormulario()
     form.method='get'; 
     form.action='recibirDatos.html';    
     var nombreDiv = document.createElement('div');
-    nombreDiv.innerHTML = '<label for="nombre">Nombre: </label><input type="text" id="nombre" name="nombre" required className="Formulario">';
+    nombreDiv.innerHTML = '<label for="nombre">Nombre: </label><input type="text" className="Formulario" id="nombre" name="nombre" required>';
     var emailDiv = document.createElement('div');
-    emailDiv.innerHTML = '<label for="email">Email: </label><input type="email" id="email" name="email" required className="Formulario">';
+    emailDiv.innerHTML = '<label for="email">Email: </label><input type="email" id="email" name="email" required>';
 
     var mensajeDiv = document.createElement('div');
-    mensajeDiv.innerHTML = '<label for="mensaje">Mensaje: </label><textarea id="mensaje" name="mensaje" rows="4" required className="Formulario"></textarea>';
+    mensajeDiv.innerHTML = '<label for="mensaje">Mensaje: </label><textarea className="Formulcl assName="Formulario"ario" id="mensaje" name="mensaje" rows="4" required ></textarea>';
 
     var btn_enviar = document.createElement('button');
    btn_enviar.type='submit';
