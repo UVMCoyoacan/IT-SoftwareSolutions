@@ -1,5 +1,7 @@
+
 function enviar()
 {
+  
     var nombre=getUrlVars()["nombre"];
     var correo=getUrlVars()["email"];
     var mensaje=getUrlVars()["mensaje"];
