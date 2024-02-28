@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="estiloUsuarios.css"?>
 <usuarios>
     <usuario>
         <id>1</id>
         <nombre>Hector Jair </nombre>
-        <apellido>Velazquez</apellido>
+        <apellido>
+            <paterno>Velazquez</paterno>
+            <materno>Jimenez</materno>
+        </apellido>
         <correo>hectorjair9@gmail.com</correo>
         <contraseña>asdnasdjdsaa</contraseña>
         <fechaNacimiento>
@@ -16,7 +20,10 @@
     <usuario>
         <id>2</id>
         <nombre>Daniela </nombre>
-        <apellido>Avila</apellido>
+        <apellido>
+            <paterno>Avila</paterno>
+            <materno>Garcia</materno>
+        </apellido>
         <correo>daniela@gmail.com</correo>
         <contraseña>asdfrgradgfew</contraseña>
         <fechaNacimiento>
@@ -29,7 +36,10 @@
     <usuario>
         <id>3</id>
         <nombre>Oliva </nombre>
-        <apellido>Jimenez</apellido>
+        <apellido>
+            <paterno>Jimenez</paterno>
+            <materno>Tapia</materno>
+        </apellido>
         <correo>ojimenez@gmail.com</correo>
         <contraseña>siwjwjaosoej</contraseña>
         <fechaNacimiento>

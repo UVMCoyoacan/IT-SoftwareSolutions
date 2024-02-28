@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <!-- Definición del tipo de datos para los elementos de fecha -->
+  <xs:simpleType name="dia">
+    <xs:restriction base="xs:positiveInteger">
+      <xs:maxExclusive value="32"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="mes">
+    <xs:restriction base="xs:positiveInteger">
+      <xs:maxExclusive value="13"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="año">
+    <xs:restriction base="xs:positiveInteger">
+      <xs:maxInclusive value="2024"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!-- Definición del tipo de datos para el elemento de teléfono -->
+  <xs:simpleType name="telefono">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[0-9]{9}"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!-- Definición del tipo de datos para el elemento de contraseña -->
+  <xs:simpleType name="contraseña">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="8"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!-- Definición del tipo de datos para el elemento de correo electrónico -->
+  <xs:simpleType name="correo">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!-- Definición del tipo de datos para el elemento de id -->
+  <xs:simpleType name="id">
+    <xs:restriction base="xs:positiveInteger"/>
+  </xs:simpleType>
+
+  <!-- Definición del tipo de datos para el elemento de nombre -->
+  <xs:simpleType name="nombre">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+
+  <!-- Definición del tipo de datos para el elemento de apellido -->
+  <xs:complexType name="apellido">
+    <xs:sequence>
+      <xs:element name="paterno" type="xs:string" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="materno" type="xs:string" minOccurs="1" maxOccurs="1"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <!-- Definición del tipo de datos para el elemento de usuario -->
+  <xs:complexType name="usuario">
+    <xs:sequence>
+      <xs:element name="id" type="id" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="nombre" type="nombre" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="apellido" type="apellido" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="correo" type="correo" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="contraseña" type="contraseña" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="fechaNacimiento">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="dia" type="dia" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="mes" type="mes" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="año" type="año" minOccurs="1" maxOccurs="1"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="telefono" type="telefono" minOccurs="1" maxOccurs="1"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <!-- Definición del elemento raíz -->
+  <xs:element name="usuarios">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="usuario" type="usuario" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+</xs:schema>
