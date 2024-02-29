@@ -163,3 +163,15 @@ th,td{
 .Enc{
     font-size:50px;
 }
+.seccion a:link{
+    color:#777;
+}
+.seccion a:visited{
+    color:#444;
+}
+.seccion a:hover{
+    color:#075b83;
+}
+.seccion a:active{
+    color:#0fa6fd;
+}
