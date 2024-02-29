@@ -47,12 +47,6 @@ th,td{
     padding: 5px;
     border-style: none;
 }
-#Encabezado{
-    border-collapse: separate;
-    border-spacing: 30px;
-    border-style: none;
-    background-color: #969696;
-}
 
 .seccion{
     display: flex;
@@ -125,4 +119,47 @@ th,td{
     border-bottom-right-radius: 0px;
     margin:0px;
     text-align: center;
+}
+.tabla .titNos{
+    background-color: #111;
+    width: 100%;
+    border-radius: 10px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    margin:0px;
+    text-align: center;
+}
+
+.tabla .colN  a {
+    color:#bbb;
+    text-decoration: none;
+}
+
+.tabla .colN  a:hover {
+    color:#eee;
+    text-decoration: none;
+}
+.Foto{
+    width: 80%;
+}
+.tabla .colN{
+    width:33%;
+    text-align: justify;
+    padding-top: 0px;
+    background-color: #333;
+    color: #bbb;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 10px;
+    transition: transform 0.2s ease;
+}
+.tabla .colN:hover{
+    transform: scale(1.1);  
+}
+.tabla .colN:hover  .titNos{
+    font-weight:bolder;
+    color:#eee;
+}
+.Enc{
+    font-size:50px;
 }
