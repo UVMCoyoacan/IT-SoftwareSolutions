@@ -1,0 +1,57 @@
+body{   
+    background-color: aqua;
+}
+ 
+    
+
+head1{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: end;
+}
+
+div.Datos{
+    text-align: center;
+    padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+}
+
+div.lista{
+    margin-top: 100px;
+    margin-left: 50px;
+}
+
+.contendor-imagenes{
+    display: flex inline;
+    justify-content: center;
+}
+
+.halo{
+    position: absolute;
+    margin-top: 200px; /* Ajusta la distancia superior */
+    margin-left: 100px;
+}
+
+.boton {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: 1px solid #3498db;
+    border-radius: 5px;
+    color: #ffffff;
+    background-color: #3498db;
+  }
+  
+  .boton:hover {
+    background-color: #2980b9;
+    border-color: #2980b9;
+  }
+  
+  .boton:active {
+    background-color: #216a94;
+    border-color: #216a94;
+  }
