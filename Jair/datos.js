@@ -1,16 +1,20 @@
+
 function enviar()
 {
-    var nombre=getUrlVars()["nombre"];
-    var correo=getUrlVars()["email"];
-    var mensaje=getUrlVars()["mensaje"];
+  
+    const parametros = new URLSearchParams(window.location.search);
+    var nombre=decodeURIComponent(parametros.get('nombre'));
+    var mensaje=decodeURIComponent(parametros.get('email'));
+    var correo=decodeURIComponent(parametros.get('mensaje'));
+    
     //alert(nombre+", "+correo+", "+mensaje);
     var conte=document.getElementById("contenedor");
-    var hnombre=document.createElement("h2");
+    var hnombre=document.createElement("p");
     var pcorreo=document.createElement("p");
     var pmensaje=document.createElement("p");
-    hnombre.innerHTML=nombre;
-    pcorreo.innerHTML=correo;
-    pmensaje.innerHTML=mensaje;
+    hnombre.innerHTML="Nombre: "+nombre;
+    pcorreo.innerHTML="Correo: "+correo;
+    pmensaje.innerHTML="Mensaje: "+mensaje;
 
     conte.appendChild(hnombre);
     conte.appendChild(pcorreo);
@@ -18,7 +22,8 @@ function enviar()
 }
 function getUrlVars() {
     var vars = {};
-    var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, 
+    var url=decodeURI(window.location.href);
+    var parts = url.replace(/[?&]+([^=&]+)=([^&]*)/gi, 
     function(m,key,value) {
       vars[key] = value;
     });

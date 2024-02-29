@@ -1,9 +1,3 @@
-table{
-    margin:5%;
-    width: 90%;
-    border-collapse: separate;
-    border-spacing: 10px;
-}
 nav {
     background-color: #333;
     color: white;
@@ -13,6 +7,7 @@ nav {
     left: 0; 
     z-index: 1000; 
     width: 100%;
+    height: 50px;
 }
 
 ul {
@@ -32,40 +27,152 @@ li a {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    border-radius: 10px;
+    margin-right: 10px;
 }
 
 li a:hover {
     background-color: #111;
+    border-radius: 10px;
+    font-weight: bolder;
+
 }
 body {
     background-color: #afafaf; 
     margin: 0; 
     padding: 0;
 }
-p{
-    text-align: justify;
-}
-#parrafoSomos{
-    text-align: justify;
-    font-size: large;
-}
+
 th,td{
     padding: 5px;
     border-style: none;
 }
-#Encabezado{
-    border-collapse: separate;
-    border-spacing: 30px;
-    border-style: none;
-    background-color: #969696;
+
+.seccion{
+    display: flex;
+    justify-content: space-between;
+    width: 80%; 
+    margin: 0 auto; 
+    margin-top: 30px;
 }
-#contenidoPa{
-    border-collapse: separate;
-    border-spacing: 0px;
-    border-style: none;
-    background-color: #969696;
-    padding: 5px;
+.seccion p{
+    font-size:x-large;
 }
-#contenidoPaquete{
-    background-color: #dbdbdb;
+.izq{
+
+    text-align: justify;
+    width: 60%;
+    padding-left: 30px;
+    
+}
+.der{
+
+    text-align: right;
+    align-self: center;
+    width: 40%;
+}
+#Inicio{
+    
+    margin-top: 80px;
+}
+.Img{
+    width:80%;
+    transition: transform 0.3s ease;
+}
+.Img:hover{
+    transform: scale(1.1);
+}
+.tabla{
+    display: flex;
+    justify-content: space-between;
+    width: 80%; 
+    margin: 0 auto; 
+    margin-top: 30px;
+}
+.tabla .col{
+    width:25%;
+    text-align: justify;
+    padding-top: 0px;
+    background-color: #333;
+    color: #bbb;
+    margin-left: 15px;
+    margin-right: 15px;
+    border-radius: 10px;
+    transition: transform 0.2s ease;
+}
+.tabla .col:hover{
+    transform: scale(1.1);  
+}
+.tabla .col:hover  .titPaq{
+    font-weight:bolder;
+    color:#eee;
+}
+.tabla p{
+    padding: 10px;
+    font-size: large;
+}
+.tabla .titPaq{
+    background-color: #111;
+    width: 100%;
+    border-radius: 10px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    margin:0px;
+    text-align: center;
+}
+.tabla .titNos{
+    background-color: #111;
+    width: 100%;
+    border-radius: 10px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    margin:0px;
+    text-align: center;
+}
+
+.tabla .colN  a {
+    color:#bbb;
+    text-decoration: none;
+}
+
+.tabla .colN  a:hover {
+    color:#eee;
+    text-decoration: none;
+}
+.Foto{
+    width: 80%;
+}
+.tabla .colN{
+    width:33%;
+    text-align: justify;
+    padding-top: 0px;
+    background-color: #333;
+    color: #bbb;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 10px;
+    transition: transform 0.2s ease;
+}
+.tabla .colN:hover{
+    transform: scale(1.1);  
+}
+.tabla .colN:hover  .titNos{
+    font-weight:bolder;
+    color:#eee;
+}
+.Enc{
+    font-size:50px;
+}
+.seccion a:link{
+    color:#555;
+}
+.seccion a:visited{
+    color:#333;
+}
+.seccion a:hover{
+    color:#075b83;
+    font-weight: bold;
+}
+.seccion a:active{
+    color:#0fa6fd;
 }

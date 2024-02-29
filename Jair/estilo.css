@@ -1,30 +1,75 @@
+:root{
+    --fondo:#477979;
+    --encabezados:#00ffff;
+    --texto:#F0F8FF;
+    --fondoBtn:#006060;
+    --fondoBtnSel:#1B3535;
+    --fondoForm:#112626;
+}
 h1,h2,h3{
     text-align: center;
-    color:darkcyan
+    color:cyan;
 }
+
 body{
-    background-color:darkslategrey;
+    background-color:var(--fondo);
 }
 div{
     padding: 2%;
 }
 p{
     text-align: justify;
-    color:aliceblue;
+    color:var(--texto);
     font-size: 14px;
 }
 ul{
-    color: aliceblue;
+    color:var(--texto);
     font-size: 14px;
 }
-button
+.Boton
 {
-    background-color: teal;
-    color: aliceblue;
+    background-color: var(--fondoBtn);
+    color: var(--texto);
     border-radius: 10px;
     border:none;
     text-align: center;
     padding: 10px;
     font-size: 16px;
     cursor:pointer;
+    margin-right: 100px;
+}
+.Boton:hover{
+    background-color:var(--fondoBtnSel);
+}
+.Formulario{
+    width:100%;
+    display: flex;
+    align-items: left;
+
+}
+.lb_form{
+    color:var(--texto);
+    font-size: large;
+}
+#formulario-datos
+{
+    background-color: var(--fondoForm);
+    padding: 10px 20px;
+    border-radius: 10px;
+    width:50%;
+
+}
+header{
+    background-color: var(--fondoForm);
+    margin-top: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+}
+.divisor{
+    margin:0px;
+    padding: 0px;
+}
+.nombre:hover{
+    color: var(--fondoBtn);
 }

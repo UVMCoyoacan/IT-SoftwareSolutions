@@ -1,0 +1,23 @@
+:root{
+    --fondo:#477979;
+    --encabezados:#00ffff;
+    --texto:#F0F8FF;
+    --fondoBtn:#006060;
+    --fondoBtnSel:#1B3535;
+    --fondoForm:#112626;
+}
+usuarios{
+    background-color: var(--fondo);
+    
+}
+usuario{
+    background-color: var(--fondoForm);
+    color:var(--texto);
+    display: block;
+    margin:10px;
+    padding-left: 10px;
+    align-items: flex-start;
+}
+id,nombre,apellido,correo,contraseña,fechaNaciminto,telefono{
+    display: block;
+}
