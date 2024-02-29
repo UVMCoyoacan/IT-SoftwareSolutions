@@ -78,7 +78,7 @@ th,td{
 .der{
 
     text-align: right;
-    align-content: center;
+    align-self: center;
     width: 40%;
 }
 #Inicio{
@@ -86,7 +86,7 @@ th,td{
     margin-top: 80px;
 }
 .Img{
-    width: 500px;
+    width:80%;
     transition: transform 0.3s ease;
 }
 .Img:hover{
