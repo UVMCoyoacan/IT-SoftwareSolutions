@@ -164,13 +164,14 @@ th,td{
     font-size:50px;
 }
 .seccion a:link{
-    color:#777;
+    color:#555;
 }
 .seccion a:visited{
-    color:#444;
+    color:#333;
 }
 .seccion a:hover{
     color:#075b83;
+    font-weight: bold;
 }
 .seccion a:active{
     color:#0fa6fd;
