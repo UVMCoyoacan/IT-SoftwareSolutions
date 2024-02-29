@@ -19,6 +19,7 @@ ul {
 
 li {
     display:inline-table;
+    border-radius: 6px;
 }
 
 li a {
@@ -31,6 +32,8 @@ li a {
 
 li a:hover {
     background-color: #111;
+    border-radius: 10px;
+
 }
 body {
     background-color: #afafaf; 
