@@ -48,16 +48,7 @@ th,td{
     border-style: none;
     background-color: #969696;
 }
-#contenidoPa{
-    border-collapse: separate;
-    border-spacing: 0px;
-    border-style: none;
-    background-color: #969696;
-    padding: 5px;
-}
-#contenidoPaquete{
-    background-color: #dbdbdb;
-}
+
 .seccion{
     display: flex;
     justify-content: space-between;
@@ -65,7 +56,9 @@ th,td{
     margin: 0 auto; 
     margin-top: 30px;
 }
-
+.seccion p{
+    font-size:x-large;
+}
 .izq{
 
     text-align: justify;
@@ -89,4 +82,42 @@ th,td{
 }
 .Img:hover{
     transform: scale(1.1);
+}
+.tabla{
+    display: flex;
+    justify-content: space-between;
+    width: 80%; 
+    margin: 0 auto; 
+    margin-top: 30px;
+}
+.tabla .col{
+    width:25%;
+    text-align: justify;
+    padding-top: 0px;
+    background-color: #333;
+    color: #bbb;
+    margin-left: 15px;
+    margin-right: 15px;
+    border-radius: 10px;
+    transition: transform 0.2s ease;
+}
+.tabla .col:hover{
+    transform: scale(1.1);  
+}
+.tabla .col:hover +  .titPaq{
+    font-weight: bold;
+    color:#000;
+}
+.tabla p{
+    padding: 10px;
+    font-size: large;
+}
+.tabla #TituloPaquete{
+    background-color: #111;
+    width: 100%;
+    border-radius: 10px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    margin:0px;
+    text-align: center;
 }
