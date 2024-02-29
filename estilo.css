@@ -104,15 +104,15 @@ th,td{
 .tabla .col:hover{
     transform: scale(1.1);  
 }
-.tabla .col:hover +  .titPaq{
-    font-weight: bold;
-    color:#000;
+.tabla .col:hover  .titPaq{
+    font-weight:bolder;
+    color:#eee;
 }
 .tabla p{
     padding: 10px;
     font-size: large;
 }
-.tabla #TituloPaquete{
+.tabla .titPaq{
     background-color: #111;
     width: 100%;
     border-radius: 10px;
