@@ -14,17 +14,14 @@ h1,h2,h3{
 body{
     background-color:var(--fondo);
 }
-div{
-    padding: 2%;
-}
 p{
     text-align: justify;
     color:var(--texto);
-    font-size: 14px;
+    font-size: 24px;
 }
 ul{
     color:var(--texto);
-    font-size: 14px;
+    font-size: 24px;
 }
 .Boton
 {
@@ -50,6 +47,8 @@ ul{
 .lb_form{
     color:var(--texto);
     font-size: large;
+
+
 }
 #formulario-datos
 {
@@ -66,10 +65,16 @@ header{
     padding-bottom: 10px;
     border-radius: 10px;
 }
-.divisor{
-    margin:0px;
-    padding: 0px;
-}
 .nombre:hover{
     color: var(--fondoBtn);
+}
+.seccion{
+    margin:0px;
+    padding: 10%;
+    padding-top: 0px;
+    padding-bottom: 20px;
+}
+.div-form{
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
