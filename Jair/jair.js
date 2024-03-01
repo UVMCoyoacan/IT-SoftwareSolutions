@@ -26,7 +26,7 @@ function mostrarFormulario()
     telefono.className=("div-form");
     var mensaje = document.createElement('div');
     mensaje.className=("div-form");
-    mensaje.innerHTML = '<label class="lb_form" for="mensaje">Mensaje: </label><textarea  class="Formulario" id="mensaje" name="mensaje" rows="4" required ></textarea>';
+    mensaje.innerHTML = '<label class="lb_form" for="mensaje">Mensaje: </label><textarea  class="Formulario" id="mensaje" name="mensaje" rows="10" required ></textarea>';
 
     var btn_enviar = document.createElement('button');
     btn_enviar.type='submit';

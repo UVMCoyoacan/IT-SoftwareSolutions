@@ -64,6 +64,7 @@ header{
     padding-top: 10px;
     padding-bottom: 10px;
     border-radius: 10px;
+
 }
 .nombre:hover{
     color: var(--fondoBtn);
@@ -90,4 +91,47 @@ header{
 }
 .seccion a:active{
     color:#0fa6fd;
+}
+nav {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    z-index: 1000; 
+    width: 100%;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav li {
+    display:inline-table;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+nav li a:hover {
+    background-color: #111;
+    border-radius: 10px;
+    font-weight: bolder;
+
+}
+#primero{
+    margin-top: 80px;
 }
