@@ -1,50 +1,80 @@
-body{
-    background-color: rgb(195, 249, 223);
-    font-family: verdana;
+body {
+  background-color: rgb(195, 249, 223);
+  font-family: verdana;
 }
 
-h1{
-    text-align: center;
-    display:block;
-    border-style:double;
-    border-width: 10px;
-    border-color: black;
-    margin: 15pt;
-    
+h1 {
+  text-align: center;
+  display: block;
+  border-style: double;
+  border-width: 10px;
+  border-color: black;
+  margin: 15pt;
+
 }
 
-h2{
-    font-size: 16px;
-    border-style:double;
-    border-color: black;
-    margin: 15pt;
+h2 {
+  font-size: 16px;
+  border-style: double;
+  border-color: black;
+  margin: 15pt;
 }
-  
-p{
-    font-size: 14px;
-    margin: 15pt;
-  }
 
-ul{
-    font-size: 14px;
-  }
+p {
+  font-size: 14px;
+  margin: 15pt;
+}
 
-  div {
-    padding: 25px;
-  }
+hr {
+  margin: 45pt;
+  background-color: rgb(47, 79, 79);
+}
 
-  img{
-    float: left;
-    margin-right: 20px;
-    border-style: solid;
-    border-color: black;
-  }
+ul {
+  font-size: 14px;
+}
 
-  a{
-    color:rgb(31, 35, 30);
-  }
+div {
+  padding: 25px;
+}
 
-  button{
-    color:darkslategray;
-    font-size: 14pt;
-  }
+textarea{
+  font-family: verdana;
+  font-size: 12pt;
+}
+
+#form{
+  text-align: center;
+}
+
+input{
+  font-family: verdana;
+  font-size: 12pt;
+}
+
+img {
+  float: left;
+  margin-right: 20px;
+  border-style: solid;
+  border-color: black;
+}
+
+a {
+  color: rgb(31, 35, 30);
+}
+
+button {
+  background-color: rgb(47, 79, 79);
+  color: antiquewhite;
+  font-size: 14pt;
+}
+
+label {
+  color: white;
+  margin: 80px;
+}
+
+#nombre {
+  font-family: verdana;
+  font-size: 12pt;
+}

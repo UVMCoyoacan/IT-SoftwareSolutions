@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>MiPrimerSitioWeb</title>
+        <title>CV | Israel E. Gutiérrez Rabelo</title>
         <link rel="stylesheet" href="estiloIsra.css" />
+        <link rel="icon" type="image/png" href="./../src/logo.png">
+        <script src="code.js"></script>
     </head>
 
     <body>
@@ -13,7 +15,7 @@
                 <img src="foto.jpg" width="150" height="180" />
                 <br /><br /><b>Nombre completo: </b>Israel Emiliano Gutiérrez Rabelo<br />
                 <b>Edad: </b>21 años<br />
-                <b>Domicilio: </b>Alfalfares 74, col. Granjas Coapa, Tlalpan, CP. 14330<br />
+                <b>Domicilio: </b>Alfalfares 74, Col. Granjas Coapa, Tlalpan, CP. 14330<br />
                 <b>Teléfono de contacto: </b>5565095720<br />
                 <b>Correo de contacto: </b>isra.rb.gtz@gmail.com
             </p>
@@ -61,14 +63,21 @@
             <p>
                 <br /><br /><ul >
                     <li>Idioma inglés nivel B1+ (ELET), B2(EF SET English Certificate 51/100)</li>
-                    <li>Conocimiento del lenguaje deprogramación C++, Java,ensamblador x86 (Nasm)</li>
-                    <li>Manejo de bases de datos en:MySQL, PL/SQL</li>
-                    <li>Representación de información enXML, JSON</li>
-                    <li>Administración elemental delsistema operativo Linux</li>
+                    <li>Conocimiento del lenguaje deprogramación C++, Java, ensamblador x86 (Nasm)</li>
+                    <li>Manejo de bases de datos en: MySQL, PL/SQL</li>
+                    <li>Representación de información en XML, JSON</li>
+                    <li>Administración elemental del sistema operativo Linux</li>
                     <li>Razonamiento matemático</li>
                 </ul>
             </p>
         </div>
-        <center><button>Haz clic para depositar tus datos</button></center>
+        <hr size="4px" />
+        <center><button onclick="generarForm()">Haz clic para depositar tus datos</button></center>
+        <br><br>
+        <form name="formulario" method="get">
+            <div id="form">
+                
+            </div>
+        </form>
     </body>
 </html>
