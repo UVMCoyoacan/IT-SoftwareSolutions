@@ -14,17 +14,14 @@ h1,h2,h3{
 body{
     background-color:var(--fondo);
 }
-div{
-    padding: 2%;
-}
 p{
     text-align: justify;
     color:var(--texto);
-    font-size: 14px;
+    font-size: 24px;
 }
 ul{
     color:var(--texto);
-    font-size: 14px;
+    font-size: 24px;
 }
 .Boton
 {
@@ -50,6 +47,8 @@ ul{
 .lb_form{
     color:var(--texto);
     font-size: large;
+
+
 }
 #formulario-datos
 {
@@ -65,11 +64,74 @@ header{
     padding-top: 10px;
     padding-bottom: 10px;
     border-radius: 10px;
-}
-.divisor{
-    margin:0px;
-    padding: 0px;
+
 }
 .nombre:hover{
     color: var(--fondoBtn);
+}
+.seccion{
+    margin:0px;
+    padding: 10%;
+    padding-top: 0px;
+    padding-bottom: 20px;
+}
+.div-form{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.seccion a:link{
+    color:#555;
+}
+.seccion a:visited{
+    color:#333;
+}
+.seccion a:hover{
+    color:#075b83;
+    font-weight: bold;
+}
+.seccion a:active{
+    color:#0fa6fd;
+}
+nav {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    z-index: 1000; 
+    width: 100%;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav li {
+    display:inline-table;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+nav li a:hover {
+    background-color: #111;
+    border-radius: 10px;
+    font-weight: bolder;
+
+}
+#primero{
+    margin-top: 80px;
 }

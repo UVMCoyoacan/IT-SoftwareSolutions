@@ -1,18 +1,27 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Hector Jair Velazquez Jimenez</title>
+        <title>Héctor Jair Velázquez Jiménez</title>
         <link rel="icon" type="image/png" href="./../src/logo.png">
         <link rel="stylesheet" type="text/css" href="estilo.css">
         <script src="jair.js"></script>
     </head>
     <body>
-        <div class="divisor">
+        <div id="Menu">
+            <nav>
+                <ul>
+                    <li><a href="./../index.html"><img src="./../src/logo.png" width="24" height="24"></a></li>
+                    <li><a href="./../index.html">Inicio</a></li>
+                </ul>
+            </nav>
+
+        </div>
+        <div class="seccion" id="primero">
             <header>
-                <h1 class="nombre">Hector Jair Velazquez Jimenez</h1>
+                <h1 class="nombre">Héctor Jair Velázquez Jiménez</h1>
             </header>
         </div>
-        <div>
+        <div class="seccion">
             <h2>Perfil</h2>
             <p>
                 Soy estudiante de Ingeniería en Sistemas Computacionales, estoy en busca de
@@ -30,7 +39,7 @@
                 <li>Diseño de interfaces de usuario</li>
             </ul>
         </div>
-        <div>
+        <div class="seccion">
             <h2>Experiencia</h2>
                     <h3>Soporte tecnico (freelancer) 2018-Presente: </h3>
                         <p>
@@ -45,15 +54,25 @@
                         </ul>
             
         </div>
-        <div>
+        <div class="seccion">
             <h2>Idiomas</h2>
                 <ul>
                     <li>Español (nativo) </li>
                     <li>Inglés nivel B1+ (ELeT)</li>
                 </ul>
         </div>
-        <div>
-            <button class="Boton" id="btn_mostrarFormulario" onclick="mostrarFormulario()">Dejame tus datos</button>
+        <div class="seccion">
+            <h2>Contácto</h2>
+                <ul>
+                    <li>Teléfono: <a href="tel:+525534577442">5534577442</a></li>
+                    <li>Correo Electrónico: <a href="email:hectorjair9@gmail.com">hectorjair9@gmail.com</a></li>
+                    <li><a href="https://www.linkedin.com/in/h%C3%A9ctor-jair-vel%C3%A1zquez-jim%C3%A9nez/">Linkedin</a></li>
+                </ul>
+        </div>
+        <div class="seccion">
+            <button class="Boton" id="btn_mostrarFormulario" onclick="mostrarFormulario()">Déjame tus datos</button>
+            <br>
+            <br>
             <div id="formulario">
 
             </div>
