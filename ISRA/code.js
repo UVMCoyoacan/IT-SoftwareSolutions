@@ -80,23 +80,66 @@ function generarForm(){
     botonEnviar.id="btnEnviar";
     botonEnviar.name="btnEnviar";
     botonEnviar.value="Enviar información";
-    botonEnviar.onclick="";
+    botonEnviar.onclick = enviarDatos;
     formulario.appendChild(botonEnviar);
 }
 
+function enviarDatos(){
+    var nombre=document.getElementById("Nombre").value;
+    var correo=document.getElementById("Correo").value;
+    var telefono=document.getElementById("Telefono").value;
+    var Message=document.getElementById("Mensaje").value;
+
+    window.location.href = "datos.html" +
+        "?nombre=" + encodeURIComponent(nombre) +
+         "&correo=" + encodeURIComponent(correo) +
+         "&telefono=" + encodeURIComponent(telefono) +
+         "&Mensaje=" + encodeURIComponent(Message);
+}
+
+function getUrlVars() { //SOLO CON GET//
+    var vars = {};
+    //AGARRA LA URL//
+    var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi,
+        function (m, key, value) {
+            if (vars[key]) {
+                vars[key].push(value);
+            } else {
+                vars[key] = [value];
+            }
+        });
+    console.log(vars);
+    return vars;
+}
+
 function recibirDatos(){
-    function getUrlVars() { //SOLO CON GET//
-        var vars = {};
-        //AGARRA LA URL//
-        var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi,
-            function (m, key, value) {
-                if (vars[key]) {
-                    vars[key].push(value);
-                } else {
-                    vars[key] = [value];
-                }
-            });
-        console.log(vars);
-        return vars;
-    }
+    var params = getUrlVars();
+    var n = decodeURIComponent(params["nombre"]);
+    var c= decodeURIComponent(params["correo"]);
+    var t = decodeURIComponent(params["telefono"]);
+    var m = decodeURIComponent(params["Mensaje"]);
+
+    var datos=document.getElementById("data");
+    const parrafo=document.createElement("p");
+    parrafo.className="datos";
+    var contenido="<b>Nombre: </b>"+n+"<br><br><b>Correo electrónico: </b>"+c+
+    "<br><br><b>Teléfono: </b>"+t+"<br><br><b>Mensaje: </b>"+m;
+    parrafo.innerHTML=contenido;
+    datos.appendChild(parrafo);
+
+    datos.innerHTML+="<br><br>";
+
+    const botonEnviar=document.createElement("input");
+    botonEnviar.type="button";
+    botonEnviar.id="btnInicio";
+    botonEnviar.name="btnInicio";
+    botonEnviar.value="Volver al inicio";
+    botonEnviar.onclick = irInicio;
+    datos.appendChild(botonEnviar);
+    
+
+}
+
+function irInicio(){
+    window.location.href = "./../index.html";
 }

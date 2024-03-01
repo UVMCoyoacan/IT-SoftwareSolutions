@@ -20,6 +20,10 @@ h2 {
   margin: 15pt;
 }
 
+.datos{
+  display: block;
+}
+
 p {
   font-size: 14px;
   margin: 15pt;
