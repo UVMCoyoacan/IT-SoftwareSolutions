@@ -14,7 +14,7 @@ div.Datos{
     padding: 20px;
             border: 1px solid #ccc;
             border-radius: 10px;
-            background-color: #f9f9f9;
+            background-color: #8b0909;
 }
 
 div.lista{
@@ -26,25 +26,17 @@ div.lista{
     display: flex inline;
     justify-content: center;
 }
-.boton {
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 16px;
+
+  .idiomas{
     text-align: center;
-    text-decoration: none;
-    cursor: pointer;
-    border: 1px solid #3498db;
-    border-radius: 5px;
-    color: #ffffff;
-    background-color: #3498db;
+    padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: #30c909;
+  }
+  button {
+    background-color: rgb(47, 79, 79);
+    color: antiquewhite;
+    font-size: 14pt;
   }
   
-  .boton:hover {
-    background-color: #2980b9;
-    border-color: #2980b9;
-  }
-  
-  .boton:active {
-    background-color: #216a94;
-    border-color: #216a94;
-  }
