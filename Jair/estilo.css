@@ -78,3 +78,16 @@ header{
     margin-top: 10px;
     margin-bottom: 10px;
 }
+.seccion a:link{
+    color:#555;
+}
+.seccion a:visited{
+    color:#333;
+}
+.seccion a:hover{
+    color:#075b83;
+    font-weight: bold;
+}
+.seccion a:active{
+    color:#0fa6fd;
+}
