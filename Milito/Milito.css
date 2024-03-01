@@ -26,13 +26,6 @@ div.lista{
     display: flex inline;
     justify-content: center;
 }
-
-.halo{
-    position: absolute;
-    margin-top: 200px; /* Ajusta la distancia superior */
-    margin-left: 100px;
-}
-
 .boton {
     display: inline-block;
     padding: 10px 20px;
