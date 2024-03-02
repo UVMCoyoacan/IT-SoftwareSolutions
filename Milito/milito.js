@@ -1,5 +1,5 @@
 function generarform(){
-    var ingresar=document.getElementById("form");
+    var ingresar=document.getElementById("formu");
     ingresar.style.backgroundColor="rgb(47, 79, 79)";
     ingresar.style.margin="155px";
     ingresar.style.marginTop="10px";
@@ -62,15 +62,14 @@ function generarform(){
 }
 
 function enviarDatos(){
-    var nombre=document.getElementById("Nombre").value;
-    var correo=document.getElementById("Correo").value;
-    var mensaje=document.getElementById("Mensaje").value;
+    var nombre=document.getElementById("Nomb").value;
+    var correo=document.getElementById("Corr").value;
+    var mensaje=document.getElementById("Mens").value;
 
     window.location.href="datos.html" +
-    "?nomb= " + encodeURIComponent(nombre) +
-    "&corr= " + encodeURIComponent (correo) + 
+    "?Nomb= " + encodeURIComponent(nombre) +
+    "&Corr= " + encodeURIComponent (correo) + 
     "&Mens= " + encodeURIComponent(mensaje);
-
 }
 
 
@@ -84,22 +83,21 @@ function getUrlVars(){
             vars[key] = [value];
         }
     });
-
     console.log(vars);
-    return value;
+    return vars;
 }
 
 function rDatos(){
     var params = getUrlVars();
-    var nom = decodeURIComponent(params["Nombre"]);
-    var cor = decodeURIComponent(params["correo"]);
-    var men = decodeURIComponent(params["mensaje"]);
+    var nom = decodeURIComponent(params["Nomb"]);
+    var cor = decodeURIComponent(params["Corr"]);
+    var men = decodeURIComponent(params["Mens"]);
 
     var dats = document.getElementById("data");
     const texto = document.createElement("p");
     texto.className="dats";
-    var contenid = "<b> Nombre: </b>" +n+ "<br><br><b> Correo electronico: </br>" +c+
-    "<br><br><b> Telefono: </b>"+t+ "<br><br><b> Mensaje: </b>" +m;
+    var contenid = "<b> Nombre: </b>" +nom+ "<br><br><b> Correo electronico: </br>" +cor+
+    "<br><br><b> Mensaje: </b>" +men;
     texto.innerHTML=contenid;
     dats.appendChild(texto);
 
@@ -107,9 +105,9 @@ function rDatos(){
 
     const enviobtn = document.createElement("input");
     enviobtn.type="button";
-    enviobtn.id="btnInicio";
-    enviobtn.name="btnInicio";
-    enviobtn.value="Volver al inicio";
+    enviobtn.id="bnInicio";
+    enviobtn.name="btInicio";
+    enviobtn.value="Regresa al inicio";
     enviobtn.onclick= irInicio;
     dats.appendChild(enviobtn);
     
