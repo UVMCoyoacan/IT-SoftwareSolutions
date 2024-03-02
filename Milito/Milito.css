@@ -34,7 +34,7 @@ div.lista{
             border-radius: 10px;
             background-color: #30c909;
   }
-  button {
+  .boton{
     background-color: rgb(47, 79, 79);
     color: antiquewhite;
     font-size: 14pt;

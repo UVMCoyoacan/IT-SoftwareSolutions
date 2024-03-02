@@ -37,7 +37,7 @@ function generarform(){
 
     const mensaje=document.createElement("label");
     mensaje.setAttribute("for","mensaje");
-    txt3 = document.createTextNode("ENviame un mensaje de disculpa");
+    txt3 = document.createTextNode("Enviame un mensaje de disculpa");
     mensaje.appendChild(txt3);
     ingresar.appendChild(mensaje);
 
@@ -56,7 +56,7 @@ function generarform(){
     bEnvio.id="enviobt";
     bEnvio.name="enviobt";
     bEnvio.value="Envio de informacion";
-    bEnvio.onclick = Dtosenviados;
+    bEnvio.onclick = "Dtosenviados()";
     ingresar.appendChild(bEnvio);
 
 }
@@ -67,9 +67,9 @@ function enviarDatos(){
     var mensaje=document.getElementById("Mensaje").value;
 
     window.location.href="datos.html" +
-    "?nombre= " + encodeURIComponent(nombre) +
-    "&correo= " + encodeURIComponent (correo) + 
-    "&Mensaje= " + encodeURIComponent(mensaje);
+    "?nomb= " + encodeURIComponent(nombre) +
+    "&corr= " + encodeURIComponent (correo) + 
+    "&Mens= " + encodeURIComponent(mensaje);
 
 }
 
@@ -96,13 +96,12 @@ function rDatos(){
     var men = decodeURIComponent(params["mensaje"]);
 
     var dats = document.getElementById("data");
-    const parrafo = document.createElement("p");
-    parrafo.className="dats";
+    const texto = document.createElement("p");
+    texto.className="dats";
     var contenid = "<b> Nombre: </b>" +n+ "<br><br><b> Correo electronico: </br>" +c+
     "<br><br><b> Telefono: </b>"+t+ "<br><br><b> Mensaje: </b>" +m;
-    parrafo.innerHTML=contenido;
-    rDatos.appendChild(parrafo);
-    dats.appendChild(parrafo);
+    texto.innerHTML=contenid;
+    dats.appendChild(texto);
 
     dats.innerHTML+="<br><br><br>";
 
