@@ -5,11 +5,11 @@ function generarform(){
     ingresar.style.marginTop="10px";
 
 
-    const labelNom=document.createElement("label");
-    labelNom.setAttribute("for","Nombre");
+    const Nom=document.createElement("label");
+    Nom.setAttribute("for","Nombre");
     txt = document.createTextNode("Nombre");
-    labelNom.appendChild(txt);
-    ingresar.appendChild(labelNom);
+    Nom.appendChild(txt);
+    ingresar.appendChild(Nom);
 
     const ingNombre=document.createElement("input");
     ingNombre.type="text";
@@ -37,7 +37,7 @@ function generarform(){
 
     const mensaje=document.createElement("label");
     mensaje.setAttribute("for","mensaje");
-    txt3 = document.createTextNode("Enviame un mensaje de disculpa");
+    txt3 = document.createTextNode("Enviame un mensaje de saludo");
     mensaje.appendChild(txt3);
     ingresar.appendChild(mensaje);
 
@@ -56,20 +56,20 @@ function generarform(){
     bEnvio.id="enviobt";
     bEnvio.name="enviobt";
     bEnvio.value="Envio de informacion";
-    bEnvio.onclick = "Dtosenviados()";
+    bEnvio.onclick = Dtosenviados;
     ingresar.appendChild(bEnvio);
 
 }
 
-function enviarDatos(){
-    var nombre=document.getElementById("Nomb").value;
-    var correo=document.getElementById("Corr").value;
-    var mensaje=document.getElementById("Mens").value;
+function Dtosenviados(){
+    var nombre=document.getElementById("Nombre").value;
+    var correo=document.getElementById("Correo").value;
+    var mensaje=document.getElementById("Mensaje").value;
 
-    window.location.href="datos.html" +
-    "?Nomb= " + encodeURIComponent(nombre) +
-    "&Corr= " + encodeURIComponent (correo) + 
-    "&Mens= " + encodeURIComponent(mensaje);
+    window.location.href="DatosMilo.html" +
+    "?nombre= " + encodeURIComponent(nombre) +
+    "&correo= " + encodeURIComponent (correo) + 
+    "&mensaje= " + encodeURIComponent(mensaje);
 }
 
 
@@ -89,9 +89,9 @@ function getUrlVars(){
 
 function rDatos(){
     var params = getUrlVars();
-    var nom = decodeURIComponent(params["Nomb"]);
-    var cor = decodeURIComponent(params["Corr"]);
-    var men = decodeURIComponent(params["Mens"]);
+    var nom = decodeURIComponent(params["nombre"]);
+    var cor = decodeURIComponent(params["correo"]);
+    var men = decodeURIComponent(params["mensaje"]);
 
     var dats = document.getElementById("data");
     const texto = document.createElement("p");
@@ -105,7 +105,7 @@ function rDatos(){
 
     const enviobtn = document.createElement("input");
     enviobtn.type="button";
-    enviobtn.id="bnInicio";
+    enviobtn.id="btInicio";
     enviobtn.name="btInicio";
     enviobtn.value="Regresa al inicio";
     enviobtn.onclick= irInicio;
