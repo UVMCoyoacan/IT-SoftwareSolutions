@@ -1,8 +1,5 @@
 function generarForm(){
     var formulario=document.getElementById("form");
-    formulario.style.backgroundColor="rgb(47, 79, 79)";
-    formulario.style.margin="155px";
-    formulario.style.marginTop="10px";
 
     //Generar ingreso de label e input//
     const labelNom=document.createElement("label");
