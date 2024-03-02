@@ -13,7 +13,7 @@ function generarform(){
 
     const ingNombre=document.createElement("input");
     ingNombre.type="text";
-    ingNombre.id="Nombre";
+    ingNombre.id="Nomb";
     ingNombre.name="Nombre";
     ingNombre.required="True";
     ingresar.appendChild(ingNombre);
@@ -28,7 +28,7 @@ function generarform(){
 
     const ingcorreo= document.createElement("input");
     ingcorreo.type="email";
-    ingcorreo.id="Correo";
+    ingcorreo.id="Corr";
     ingcorreo.name="Correo";
     ingcorreo.required="True";
     ingresar.appendChild(ingcorreo);
@@ -44,7 +44,7 @@ function generarform(){
     ingresar.innerHtml+="<br><br><br>";
 
     const envMensaje=document.createElement("textarea");
-    envMensaje.id="Mensaje";
+    envMensaje.id="Mens";
     envMensaje.name="Mensaje";
     envMensaje.required="True";
     ingresar.appendChild(envMensaje);
@@ -56,7 +56,7 @@ function generarform(){
     bEnvio.id="enviobt";
     bEnvio.name="enviobt";
     bEnvio.value="Envio de informacion";
-    bEnvio.onclick = "Dtosenviados()";
+    bEnvio.onclick = enviarDatos;
     ingresar.appendChild(bEnvio);
 
 }
@@ -66,7 +66,7 @@ function enviarDatos(){
     var correo=document.getElementById("Corr").value;
     var mensaje=document.getElementById("Mens").value;
 
-    window.location.href="datos.html" +
+    window.location.href="DatosMilo.html" +
     "?Nomb= " + encodeURIComponent(nombre) +
     "&Corr= " + encodeURIComponent (correo) + 
     "&Mens= " + encodeURIComponent(mensaje);
@@ -87,7 +87,7 @@ function getUrlVars(){
     return vars;
 }
 
-function rDatos(){
+function Dtosenviados(){
     var params = getUrlVars();
     var nom = decodeURIComponent(params["Nomb"]);
     var cor = decodeURIComponent(params["Corr"]);
@@ -102,17 +102,5 @@ function rDatos(){
     dats.appendChild(texto);
 
     dats.innerHTML+="<br><br><br>";
-
-    const enviobtn = document.createElement("input");
-    enviobtn.type="button";
-    enviobtn.id="bnInicio";
-    enviobtn.name="btInicio";
-    enviobtn.value="Regresa al inicio";
-    enviobtn.onclick= irInicio;
-    dats.appendChild(enviobtn);
     
-}
-
-function irInicio(){
-    window.location.href = "./../index.html";
 }
