@@ -100,16 +100,6 @@ function rDatos(){
     "<br><br><b> Mensaje: </b>" +men;
     texto.innerHTML=contenid;
     dats.appendChild(texto);
-
-    dats.innerHTML+="<br><br><br>";
-
-    const enviobtn = document.createElement("input");
-    enviobtn.type="button";
-    enviobtn.id="btInicio";
-    enviobtn.name="btInicio";
-    enviobtn.value="Regresa al inicio";
-    enviobtn.onclick= irInicio;
-    dats.appendChild(enviobtn);
     
 }
 
